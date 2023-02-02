@@ -1,0 +1,55 @@
+
+
+<div class="container">
+
+  <mat-card>
+
+
+  <form class="example-form">
+
+
+    <div style="text-align:center">
+      <img src="../assets/psg.png" alt="psg logo" width="75px" height="75px">
+      <h1>COVID-19 ANTIGEN TEST FORM</h1>
+    </div>
+
+    <br>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td ><mat-form-field style="width: 500px;">
+        <mat-label>Complete Name</mat-label>
+        <input matInput [(ngModel)]="name" name="name">
+      </mat-form-field></td>
+      <td><mat-form-field style="width: 100px;">
+        <mat-label>Age</mat-label>
+        <input type="number" [(ngModel)]="age" name="age" matInput>
+      </mat-form-field></td>
+      <td><mat-form-field style="width: 100px;">
+        <mat-label>Gender</mat-label>
+        <mat-select [(ngModel)]="gender" name="gender">
+          <mat-option value="-">-</mat-option>
+          <mat-option value="M">Male</mat-option>
+          <mat-option value="F">Female</mat-option>
+        </mat-select>
+      </mat-form-field></td>
+    </tr></table>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field style="width:500px;">
+        <mat-label>Office</mat-label>
+        <input matInput [(ngModel)]="office" name="office">
+      </mat-form-field></td>
+      <td><mat-form-field  style="width: 200px;">
+        <mat-label>Contact Number</mat-label>
+        <input [(ngModel)]="contact" name="contact" type="number" placeholder="Ex. 09991234567" matInput>
+      </mat-form-field></td>
+    </tr></table>
+
+    <br>
+
+    <button mat-raised-button color="primary" (click)="onPrintForm()">PRINT</button>
+  </form>
+
+  </mat-card>
+
+</div>

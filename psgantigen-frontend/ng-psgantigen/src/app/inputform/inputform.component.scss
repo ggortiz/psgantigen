@@ -1,0 +1,14 @@
+* {
+  font-size:large;
+}
+
+tr {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}

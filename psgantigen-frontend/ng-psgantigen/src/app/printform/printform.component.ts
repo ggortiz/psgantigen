@@ -8,11 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PrintformComponent implements OnInit, AfterViewInit {
 
-  name = '-';
-  office = '-';
-  age = '-';
-  gender = '-';
-  contact  = '-';
+  name = '';
+  office = '';
+  age = '';
+  gender = '';
+  contact  = '';
   datenow = new Date();
 
   constructor(
@@ -24,6 +24,8 @@ export class PrintformComponent implements OnInit, AfterViewInit {
     this.name = this.route.snapshot.paramMap.get('name') as string;
     this.office = this.route.snapshot.paramMap.get('office') as string;
     this.contact = this.route.snapshot.paramMap.get('contact') as string;
+    // this.age = this.route.snapshot.paramMap.get('age') as string;
+    // this.gender = this.route.snapshot.paramMap.get('gender') as string;
 
   }
 

@@ -1,0 +1,27 @@
+
+<div class="header">
+   <!-- <img src="../assets/psg.png" alt="psg logo" width="30px" height="30px"> -->
+  <qrcode [qrdata]="qrCode" [width]="120" [errorCorrectionLevel]="'M'"></qrcode>
+  <p><b>Technical Inspection Center 6</b></p>
+  <p>Presidential Guards Battalion,</p>
+  <p>Presidential Security Group</p>
+  <p>Malacañang Palace Complex Manila</p>
+  <p><b>COVID-19 Antigen Test Form</b></p>
+</div>
+
+<div>
+
+  <p>Date: <b>{{ datenow | date: 'mediumDate'}}</b></p>
+  <p>Guest No.:</p>
+  <p>Temperature:</p>
+  <p>Name:</p>
+  <p>&nbsp;&nbsp;<b>{{ name }}</b></p>
+  <p>Office:</p>
+  <p>&nbsp;&nbsp;<b>{{ office }}</b></p>
+  <p>Age:</p>
+  <p>Gender:</p>
+  <p>Contact No.:</p>
+  <p>Covid Ag Test Result: </p>
+  <br>
+  <p>___________________________</p>
+</div>
