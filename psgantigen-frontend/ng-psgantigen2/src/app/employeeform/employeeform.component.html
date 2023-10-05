@@ -1,0 +1,52 @@
+
+
+<div class="container">
+
+  <mat-card>
+
+
+  <form class="example-form">
+
+
+    <div style="text-align:center">
+      <img src="../assets/psg.png" alt="psg logo" width="75px" height="75px">
+      <h1>COVID-19 ANTIGEN TEST FORM</h1>
+      <b><h1>FOR PERSONNEL</h1></b>
+    </div>
+
+    <br>
+
+    <table class="example-full-width" cellspacing="0">
+      <tr class="icon-text">
+        <td><mat-form-field class="example-full-width">
+          <mat-label>Employee No.</mat-label>
+          <input matInput type="number" [(ngModel)]="empno" name="empno" (keyup.enter)="search(empno)" placeholder="Ex. 70904">
+        </mat-form-field></td>
+        <td><button mat-stroked-button (click)="search(empno)">Search</button></td>
+        <td><button mat-stroked-button (click)="clear()">Clear Fields</button></td>
+      </tr>
+    </table>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td ><mat-form-field style="width: 500px;">
+        <mat-label>Complete Name</mat-label>
+        <input matInput [(ngModel)]="name" name="name">
+      </mat-form-field></td>
+    </tr></table>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field style="width:500px;">
+        <mat-label>Office</mat-label>
+        <input matInput [(ngModel)]="office" name="office">
+      </mat-form-field></td>
+    </tr></table>
+
+    <br>
+
+    <button mat-raised-button color="primary" (click)="onPrintForm()">PRINT</button>
+    <!-- <button mat-raised-button color="primary" (click)="onPrintVMSRpt()">VMS REPORT</button> -->
+  </form>
+
+  </mat-card>
+
+</div>

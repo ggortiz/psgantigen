@@ -1,0 +1,59 @@
+* {
+  font-family: Tahoma ;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.header {
+  font-size: 7px;
+  line-height: 7px;
+  padding-top: 20px;
+}
+
+
+// .qrcode
+// {
+// 	top: -130px;
+// 	left: 25px;
+// 	position: relative;
+//     z-index: 2;
+// }
+
+// .logo
+// {
+// 	height: 150px;
+// 	width: 150px;
+// 	position: relative;
+//     z-index: 1;
+// }
+
+.logo
+{
+	height: 150px;
+	width: 150px;
+
+}
+
+.image_wrapper {
+  position: relative;
+  padding-top: 15px;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+}
+
+.overlay_0 {
+  left: 0;
+  top: 0;
+  padding: .5rem;
+  margin-top: 55px;
+  margin-left: 23px;
+}

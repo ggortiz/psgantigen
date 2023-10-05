@@ -1,0 +1,56 @@
+
+<div class="image_wrapper">
+  <img class="logo" src="../assets/psglogo.jpg" alt="psg logo" >
+  <div class="overlay overlay_0">
+    <qrcode [qrdata]="qrCode" [width]="80" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+</div>
+
+
+<!-- logo inside qrcode
+<div class="header">
+    <qrcode 
+      [qrdata]="qrCode"
+      [allowEmptyString]="true"
+      [ariaLabel]="'QR Code image with the following content...'"
+      [cssClass]="'center'"
+      [colorDark]="'#000000ff'"
+      [colorLight]="'#ffffffff'"
+      [elementType]="'canvas'"
+      [errorCorrectionLevel]="'M'"
+      [imageSrc]="'./assets/psg3.png'"
+      [imageHeight]="30"
+      [imageWidth]="30"
+      [margin]="4"
+      [scale]="1"
+      [title]="'A custom title attribute'"
+      [width]="120"
+      ></qrcode>
+</div> -->
+
+
+
+<!-- antigen layout
+<div class="header">
+  <qrcode [qrdata]="qrCode" [width]="120" [errorCorrectionLevel]="'M'"></qrcode>
+  <p><b>Technical Inspection Center 6</b></p>
+  <p>Presidential Guards Battalion,</p>
+  <p>Presidential Security Group</p>
+  <p>Malacañang Palace Complex Manila</p>
+  <p><b>COVID-19 Antigen Test Form</b></p>
+</div>
+<div>
+  <p>Date: <b>{{ datenow | date: 'medium'}}</b></p>
+  <p>Guest No.:</p>
+  <p>Temperature:</p>
+  <p>Name:</p>
+  <p>&nbsp;&nbsp;<b>{{ name }}</b></p>
+  <p>Office:</p>
+  <p>&nbsp;&nbsp;<b>{{ office }}</b></p>
+  <p>Age:</p>
+  <p>Gender:</p>
+  <p>Contact No.:</p>
+  <p>Covid Ag Test Result: </p>
+  <br>
+  <p>___________________________</p>
+</div> -->

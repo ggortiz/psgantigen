@@ -1,0 +1,36 @@
+* {
+  font-size:large;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+mat-card {
+  padding: 20px;
+}
+
+td {
+  padding-right: 8px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+
